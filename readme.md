@@ -1,2 +1,1 @@
 # camera_pike
-python
