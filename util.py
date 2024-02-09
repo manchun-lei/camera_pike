@@ -202,3 +202,6 @@ def read_exif_selected_tags(srcfile,show=False):
         for name,val in selected_tags_dict.items():
             print(name,':',val)
     return selected_tags_dict
+    
+def read_rgb_sub(srcfile):
+    return debayer_sub_rgb(np.asarray(Image.open(srcfile)))
